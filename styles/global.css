@@ -13,18 +13,20 @@ html {
     --blue: #3485FF;
     --red: #e83f5b;
     --background: #F6FAFF;
-    --overlay: #040911;
-    --icons-datails: #A5B0C1;
+    --overlay: rgba(4, 9, 17, 0.8);
+    --icons-details: #A5B0C1;
 
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
     --grey-light: #E5EAF1;
+    --grey-medium: #eaecf1;
 
     /* 1rem = 16px (User Agent) = 100% */
     font-size: 62.5%;
 }
 
 body {
+    display: flex;
     height: 100vh;
     width: 100vw;
     background: var(--background);
@@ -61,5 +63,48 @@ input, button, .button {
 }
 .content header img {
     width: 16.7rem;
+
+}
+
+button, .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    cursor: pointer;
+}
+button:hover, .button:hover {
+    filter: brightness(1.2);
+    transition: filter 1s;
+}
+
+button > img,
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+button.outlined,
+.button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+}
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white)
+}
+button.grey,
+.button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark)
 
 }
