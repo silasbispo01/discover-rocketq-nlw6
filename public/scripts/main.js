@@ -5,7 +5,6 @@ const modalDescription = document.querySelector('.modal p');
 const modalButton = document.querySelector('.modal button');
 const checkButtons = document.querySelectorAll('.actions a.check');
 const deleteButtons = document.querySelectorAll('.actions a.delete');
-
 // Marcar como lido
 checkButtons.forEach((button) => {
     button.addEventListener('click', handleClick)
