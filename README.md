@@ -19,7 +19,7 @@ Tive que desenvolver três funções neste app:
  
  - ` git clone https://github.com/silasbispo01/discover-rocketq-nlw6.git `
  - Instale os pacotes com ` npm i `
- - Inicie um novo banco de dados` npm run init-dv `
+ - Inicie um novo banco de dados` npm run init-db `
  - Roda a aplicação com ` npm start `
  <hr/>
 
